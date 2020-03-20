@@ -1,38 +1,74 @@
-.App {
+* {
+  list-style: none;
+ 
+}
+html {
+  font-size: 10px;
+}
+h2 {
   text-align: center;
+  text-transform: uppercase;
+  color: #428888;
+  padding: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 1200px;
+  margin: 3rem auto;
+  font-size: 2.5rem;
+  
+}
+.bookList {
+  background-color: blanchedalmond;
+  padding: 2rem;
+}
+.bookList:hover {
+  transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
+.listElement {
+  padding: 1.5rem;
+  border: 1px solid grey;
+  margin: 1rem;
+  width: 90%;
+}
+.listElement:active {
+  background-color: cadetblue;
+  color: bisque;
+  transform: skew(-20deg);
+}
+#bookForm {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#year:optional {
+  border: 2px solid grey;
+}
+
+:required {
+  border: 2px solid orange;
+}
+input:valid {
+  border: 2px solid green;
+}
+button {
+  appearance: none;
+  border: none;
+  font-size: 1.6rem;
+  background-color: rgb(238, 104, 198);
+  border-radius: 30px;
+  color: rgb(248, 248, 236);
+}
+button:hover {
+  transform: scale(1.2);
+  box-shadow: 1px 3px 3px rgb(102, 151, 117);
+  color: rgb(102, 151, 117);
+}
+button:active {
+  transform: scale(0.9);
+  transform: translateY(5px);
+  color: rgb(248, 248, 236);
 }
